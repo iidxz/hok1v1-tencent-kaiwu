@@ -1,0 +1,25 @@
+[monitor]
+# Monitor side: 0 blue camp, 1 red camp.
+monitor_side = 0
+
+# Keep this enabled so evaluation/monitoring can switch sides.
+auto_switch_monitor_side = true
+
+[episode]
+# v4_2_plus keeps the v4_2 historical opponent pool.
+opponent_agent = "280471"
+train_opponent_pool = ["280471", "279609", "278719"]
+
+# Keep evaluation fixed so the v4_2_plus curve is readable.
+eval_interval = 10
+eval_opponent_type = "280471"
+eval_opponent_pool = ["280471"]
+
+# Fallback lineup for config parsing. train_workflow.py uses GameConfig.TRAIN_HERO_IDS.
+[[lineups.blue_camp]]
+# 112: Luban No.7, 133: Di Renjie
+hero_id = 112
+
+[[lineups.red_camp]]
+# 112: Luban No.7, 133: Di Renjie
+hero_id = 133

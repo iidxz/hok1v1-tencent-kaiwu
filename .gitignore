@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs
+*.log
+log.txt
+
+# Editors and local tools
+.vscode/
+.idea/
+.sisyphus/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+
+# Models and checkpoints
+ckpt/
+*.pkl
+*.pt
+*.pth
+
+# Temporary files
+tmp/
+temp/

@@ -1,0 +1,46 @@
+[monitor]
+# Monitor side, statistics are from the perspective of this side
+# Type: integer, range [0, 1]
+# 0 represents the blue camp, 1 represents the red camp
+# 监控上报的阵营，类型整型，取值范围[0,1]
+# 0表示蓝方阵营，1表示红方阵营
+monitor_side = 0  
+
+# Auto switch monitor side, Type: boolean, value range: [true, false]
+# 是否启用自动换边逻辑，类型布尔值，true表示开启，false表示关闭
+auto_switch_monitor_side = true
+
+[episode]
+# Opponent agent, Type: string, range [selfplay, common_ai, custom model id]
+# 1. selfplay: Indicates self-play
+# 2. common_ai: Indicates playing against a rule-based common AI
+# 3. custom_model_id: Indicates playing against a custom model specified by its model ID
+# 对手智能体，类型字符串，取值范围[selfplay, common_ai, 自定义模型id]
+# 1. selfplay：自对弈
+# 2. common_ai：与基于规则的common_ai对战
+# 3. 自定义的模型id：与指定的模型对战，需要先将模型上传至模型管理，并且将模型ID配置在kaiwu.json中，然后在此处进行引用
+opponent_agent = "selfplay"
+
+# Evaluation interval (unit: games). Type: integer, value range: integer >= 2, default: 10
+# 评估间隔(单位局)，类型整型，取值范围为大于等于2的整数，默认值10
+eval_interval = 10
+
+# Evaluation opponent type, Type: string, value range: [selfplay, common_ai, custom model ID]
+# Please refer to the opponent agent annotation for the meaning of the value
+# 评估对手类型，类型字符串，取值范围为[selfplay, common_ai, 自定义模型id]
+# 值的含义请参考opponent_agent注释
+eval_opponent_type = "common_ai"
+
+# Blue camp lineup configuration
+# 蓝方阵容配置
+[[lineups.blue_camp]]
+# hero_id, Type: integer, options: 112: Luban No.7, 133: Di Renjie
+# 英雄ID, 类型整数, 可选 112: 鲁班七号, 133: 狄仁杰
+hero_id = 112
+
+# Red camp lineup configuration
+# 红方阵容配置
+[[lineups.red_camp]]
+# hero_id, Type: integer, options: 112: Luban No.7, 133: Di Renjie
+# 英雄ID, 类型整数, 可选 112: 鲁班七号, 133: 狄仁杰
+hero_id = 112
