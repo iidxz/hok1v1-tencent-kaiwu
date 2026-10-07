@@ -1,0 +1,113 @@
+bash-5.2#  /usr/bin/env /bin/python3 /root/.local/share/code-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 44271 -- /data/projects/hok1v1/train_test.py 
+current algorithm_name is ppo
+2026-05-30 00:00:35.587 | INFO | PID:364 | learner.main:428 - learner Running mode: normal, Monitor version: v2
+2026-05-30 00:00:35.589 | INFO | PID:364 | learner.register_monitor:164 - learner learner_init Start loading framework default monitor file kaiwudrl/conf/kaiwudrl/monitor.yaml
+2026-05-30 00:00:35.590 | INFO | PID:364 | monitor_config_builder.load_monitor_config_from_yaml:667 - learner learner_init Loading monitor file
+2026-05-30 00:00:35.625 | INFO | PID:364 | monitor_config_builder.load_monitor_config_from_yaml:673 - learner learner_init YAML file read successfully, starting validation and configuration build...
+2026-05-30 00:00:35.627 | INFO | PID:364 | monitor_config_builder.load_monitor_config_from_yaml:680 - learner learner_init Config build validation successful!
+2026-05-30 00:00:35.628 | INFO | PID:364 | monitor_config_builder.merge:487 - learner Config merge completed
+2026-05-30 00:00:35.628 | INFO | PID:364 | learner.register_monitor:170 - learner learner_init Framework default monitor config merged successfully (lowest priority)
+2026-05-30 00:00:35.628 | INFO | PID:364 | learner.register_monitor:177 - learner learner_init Start loading project default monitor file
+2026-05-30 00:00:35.628 | INFO | PID:364 | monitor_config_builder.load_monitor_config_from_yaml:667 - learner learner_init Loading monitor file
+2026-05-30 00:00:35.679 | INFO | PID:364 | monitor_config_builder.load_monitor_config_from_yaml:673 - learner learner_init YAML file read successfully, starting validation and configuration build...
+2026-05-30 00:00:35.680 | INFO | PID:364 | monitor_config_builder.load_monitor_config_from_yaml:680 - learner learner_init Config build validation successful!
+2026-05-30 00:00:35.682 | INFO | PID:364 | monitor_config_builder.merge:487 - learner Config merge completed
+2026-05-30 00:00:35.682 | INFO | PID:364 | learner.register_monitor:183 - learner learner_init Project default monitor config merged successfully (medium priority, overrides framework default)
+2026-05-30 00:00:35.683 | INFO | PID:364 | learner.register_monitor:195 - learner learner_init Start loading user custom monitor file: agent_ppo/conf/monitor_builder.py
+2026-05-30 00:00:35.685 | INFO | PID:364 | monitor_config_builder.load_user_monitor_config:866 - learner learner_init User config directory added to Python path: /data/projects/hok1v1/agent_ppo/conf
+2026-05-30 00:00:35.712 | ERROR | PID:364 | monitor_config_builder.load_user_monitor_config:922 - learner learner_init Error occurred while loading user monitor config (path: /data/projects/hok1v1/agent_ppo/conf/monitor_builder.py): 配置校验失败，共发现 2 个错误：
+  1. 面板英文名称非法：鲁班先验阻断，需满足0~50字符，仅支持英文、数字及_-空格符号
+  2. 面板英文名称非法：狄仁杰先验阻断，需满足0~50字符，仅支持英文、数字及_-空格符号, will skip loading
+2026-05-30 00:00:35.713 | WARNING | PID:364 | learner.register_monitor:207 - learner learner_init User custom monitor config loading failed, will skip this config
+2026-05-30 00:00:35.714 | INFO | PID:364 | learner.register_monitor:212 - learner learner_init Start building final monitor config...
+2026-05-30 00:00:35.715 | INFO | PID:364 | learner.register_monitor:220 - learner learner_init Output directory /workspace/train/ ready (created automatically if not exists)
+2026-05-30 00:00:35.753 | INFO | PID:364 | monitor_config_builder.dump_to_yaml_file:572 - learner Config successfully written to file: /workspace/train/monitor.yaml
+2026-05-30 00:00:35.797 | INFO | PID:364 | monitor_config_builder.dump_to_yaml_file:572 - learner Config successfully written to file: /workspace/train/monitor.yaml.done
+2026-05-30 00:00:35.797 | INFO | PID:364 | learner.register_monitor:228 - learner learner_init === Monitor config registration completed ===
+2026-05-30 00:00:35.798 | INFO | PID:364 | learner.register_monitor:229 - learner learner_init Final config file generated: /workspace/train/monitor.yaml
+2026-05-30 00:00:35.998934: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-30 00:00:36.000773: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2026-05-30 00:00:36.037178: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2026-05-30 00:00:36.037812: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+learner is alive
+2026-05-30 00:00:40.393075: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-05-30 00:00:43.746 | INFO | PID:364 | process_health_monitor.register_alert_callback:319 - learner learner_init ProcessHealthMonitor registered alert callback for types: ALL
+2026-05-30 00:00:43.758 | INFO | PID:364 | process_health_monitor.register_process:192 - learner learner_init ProcessHealthMonitor registered process: trainer(pid=526, type=trainer)
+2026-05-30 00:00:43.759 | INFO | PID:364 | learner.train_loop:366 - learner_init process health monitor started
+2026-05-30 00:00:43.769 | INFO | PID:459 | worker.worker_start_up:179 - aisrv ai_server using shared MonitorProxy (PID: 545) not_server
+2026-05-30 00:00:43.772 | INFO | PID:459 | process_health_monitor.register_alert_callback:319 - aisrv ai_server ProcessHealthMonitor registered alert callback for types: ALL
+2026-05-30 00:00:44.615 | INFO | PID:526 | trainer.before_run:290 - learner train process start at pid is 526
+MonitorProxy before_run: No config provided, config_section=None, config_file_path=None
+2026-05-30 00:00:45.418 | INFO | PID:545 | monitor_proxy_process.before_run:100 - aisrv monitor_proxy started at PID 545, serving as cross-process shared singleton. All Workers will use this single monitor_proxy process.
+2026-05-30 00:00:45.420 | INFO | PID:545 | monitor_proxy_process.before_run:141 - aisrv monitor_proxy process start success at pid is 545
+2026-05-30 00:00:46.243 | INFO | PID:459 | process_health_monitor.register_process:192 - aisrv ai_server ProcessHealthMonitor registered process: learner_proxy_train_one_0(pid=665, type=learner_proxy)
+2026-05-30 00:00:46.245 | INFO | PID:459 | aisrv_server_standard.start_aisrv_handler:513 - aisrv ai_server get kaiwu_env address is ['10.22.157.142:5566']
+2026-05-30 00:00:46.251 | INFO | PID:459 | aisrv_server_standard.start_aisrv_handler:526 - aisrv ai_server AiSrvHandle with address: 10.22.157.142:5566 start
+2026-05-30 00:00:46.252 | INFO | PID:459 | process_health_monitor.register_process:192 - aisrv ai_server ProcessHealthMonitor registered process: workflow_0(pid=668, type=workflow)
+2026-05-30 00:00:46.252 | INFO | PID:459 | aisrv_server_standard.before_run:660 - aisrv ai_server is start success at 0.0.0.0:8000, pid is 459, run_mode is train, self_play is True
+2026-05-30 00:00:47.018 | INFO | PID:526 | worker.worker_start_up:179 - learner train using shared MonitorProxy (PID: None) not_server
+2026-05-30 00:00:47.023 | INFO | PID:526 | replay_buffer_wrapper.init:122 - learner train replay_buff, use reverb
+[reverb/cc/platform/tfrecord_checkpointer.cc:162]  Initializing TFRecordCheckpointer in /tmp/tmpqak4ygmj.
+[reverb/cc/platform/tfrecord_checkpointer.cc:567] Loading latest checkpoint from /tmp/tmpqak4ygmj
+[reverb/cc/platform/default/server.cc:71] Started replay server on port 9999
+2026-05-30 00:00:47.648 | INFO | PID:526 | agent_wrapper_common.create_standard_agent_wrapper:117 - learner policy_name train_one, algo ppo, agent_wrapper is StandardModelWrapperPytorch
+2026-05-30 00:00:47.752 | INFO | PID:526 | agent_wrapper_common.create_standard_agent_wrapper:117 - learner policy_name train_two, algo ppo, agent_wrapper is StandardModelWrapperPytorch
+2026-05-30 00:00:47.763 | INFO | PID:526 | trainer.before_run:383 - learner train zmq server on learner bind at 0.0.0.0:9997 for aisrv
+2026-05-30 00:00:47.788 | INFO | PID:526 | agent.save_model:781 - learner save model /data/ckpt/hok1v1_ppo/model.ckpt-0.pkl successfully
+2026-05-30 00:00:48.225 | INFO | PID:662 | worker.worker_start_up:179 - aisrv model_file_sync using shared MonitorProxy (PID: 545) not_server
+2026-05-30 00:00:48.226 | INFO | PID:662 | model_file_sync.before_run:231 - aisrv model_file_sync, use modelpool, use_which_deep_learning_framework is pytorch
+2026-05-30 00:00:48.227 | INFO | PID:662 | model_file_sync.before_run:237 - model_file_sync process pid is 662
+2026-05-30 00:00:48.227 | INFO | PID:662 | model_file_sync.make_model_dirs:167 - model_file_sync mkdir /data/ckpt/hok1v1_ppo/plugins success
+2026-05-30 00:00:48.228 | INFO | PID:662 | model_file_sync.make_model_dirs:184 - model_file_sync mkdir /data/ckpt/hok1v1_ppo/models /data/ckpt/hok1v1_ppo/models_new/ /data/ckpt/hok1v1_ppo/plugins success
+2026-05-30 00:00:48.228 | INFO | PID:662 | model_file_sync.make_model_dirs:193 - model_file_sync mkdir /data/ckpt/hok1v1_ppo/convert_models_aisrv success
+2026-05-30 00:00:48.631 | INFO | PID:526 | model_file_sync.push_checkpoint_to_model_pool:632 - model_file_sync push output_file_name /data/ckpt/hok1v1_ppo/kaiwu_checkpoint_hok1v1_ppo_0.tar.gz key model.ckpt_hok1v1_ppo_0 to modelpool success,             total push to modelpool succ cnt is 1             total push to modelpool err cnt is 0
+2026-05-30 00:00:48.632 | INFO | PID:526 | off_policy_strategy.before_run:46 - learner train first model file push to modelpool success
+2026-05-30 00:00:48.633 | INFO | PID:526 | off_policy_strategy.before_run:50 - learner OffPolicyStrategy before_run
+2026-05-30 00:00:48.633 | INFO | PID:526 | trainer.before_run:440 - learner train process start success at 526, on-policy/off-policy is off_policy, trainer global step -1.0, app hok1v1 algo ppo, train_batch_size is 2
+2026-05-30 00:00:49.030 | INFO | PID:665 | worker.worker_start_up:179 - aisrv learner_proxy using shared MonitorProxy (PID: 545) not_server
+2026-05-30 00:00:49.223973: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-30 00:00:49.225945: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2026-05-30 00:00:49.258543: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2026-05-30 00:00:49.259575: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+aisrv is alive
+Error found in file: /data/projects/hok1v1/log/learner/learner_init_pid364_log_2026-05-30-00.log
+Error content (line 13): {"time": "2026-05-30 00:00:35.712429", "level": "ERROR", "message": "learner learner_init Error occurred while loading user monitor config (path: /data/projects/hok1v1/agent_ppo/conf/monitor_builder.py): 配置校验失败，共发现 2 个错误：\n  1. 面板英文名称非法：鲁班先验阻断，需满足0~50字符，仅支持英文、数字及_-空格符号\n  2. 面板英文名称非法：狄仁杰先验阻断，需满足0~50字符，仅支持英文、数字及_-空格符号, will skip loading", "file": "monitor_config_builder.py", "line": "922", "module": "learner", "process": "monitor_config_builder", "function": "load_user_monitor_config", "stack": "", "pid": 364}
+2026-05-30 00:00:49.879 | INFO | PID:668 | worker.worker_start_up:179 - aisrv ai_server_handle using shared MonitorProxy (PID: 545) not_server
+2026-05-30 00:00:49.919 | INFO | PID:668 | kaiwu_rl_helper_standard.__init__:169 - aisrv kaiwu_rl_helper start at pid 668, ppid is 140207183443776, thread id is -1
+2026-05-30 00:00:49.919 | INFO | PID:668 | kaiwu_rl_helper_standard.__init__:169 - aisrv kaiwu_rl_helper start at pid 668, ppid is 140207183443776, thread id is -1
+2026-05-30 00:00:49.920 | INFO | PID:668 | aisrv_handle_standard.before_run:224 - aisrv ai_server_handle use kaiwu_rl_helper: <KaiWuRLStandardHelper(kaiwu_rl_helper_0, initial daemon)>
+2026-05-30 00:00:49.920 | INFO | PID:668 | aisrv_handle_standard.before_run:224 - aisrv ai_server_handle use kaiwu_rl_helper: <KaiWuRLStandardHelper(kaiwu_rl_helper_0, initial daemon)>
+2026-05-30 00:00:49.921 | INFO | PID:668 | aisrv_handle_standard.before_run:227 - aisrv ai_server_handle established connect to 10.22.157.142:5566, slot id is 0, min_slot_id is 0
+2026-05-30 00:00:49.921 | INFO | PID:668 | aisrv_handle_standard.before_run:227 - aisrv ai_server_handle established connect to 10.22.157.142:5566, slot id is 0, min_slot_id is 0
+2026-05-30 00:00:49.922 | INFO | PID:668 | aisrv_handle_standard.before_run:236 - aisrv ai_server_handle current_actor_addrs is [], current_learner_addrs is ['127.0.0.1:9999']
+2026-05-30 00:00:49.922 | INFO | PID:668 | aisrv_handle_standard.before_run:236 - aisrv ai_server_handle current_actor_addrs is [], current_learner_addrs is ['127.0.0.1:9999']
+2026-05-30 00:00:49.923 | INFO | PID:668 | aisrv_handle_standard.before_run:259 - aisrv ai_server_handle start success at pid 668
+2026-05-30 00:00:49.923 | INFO | PID:668 | aisrv_handle_standard.before_run:259 - aisrv ai_server_handle start success at pid 668
+2026-05-30 00:00:49.973 | INFO | PID:668 | process_health_monitor.register_thread:259 - aisrv ai_server ProcessHealthMonitor registered thread: kaiwu_rl_helper_0(tid=140205824558784, type=kaiwu_rl_helper)
+2026-05-30 00:00:49.973 | INFO | PID:668 | process_health_monitor.register_thread:259 - aisrv ai_server ProcessHealthMonitor registered thread: kaiwu_rl_helper_0(tid=140205824558784, type=kaiwu_rl_helper)
+2026-05-30 00:00:50.004 | INFO | PID:668 | kaiwu_env_proxy.init:94 - aisrv kaiwu_env_proxy use zmq, connect to 10.22.157.142, port is 5566, client_id is 88326568
+2026-05-30 00:00:50.004 | INFO | PID:668 | kaiwu_env_proxy.init:94 - aisrv kaiwu_env_proxy use zmq, connect to 10.22.157.142, port is 5566, client_id is 88326568
+2026-05-30 00:00:50.470 | INFO | PID:668 | agent_wrapper_common.create_standard_agent_wrapper:117 - aisrv policy_name train_one, algo ppo, agent_wrapper is StandardModelWrapperPytorch
+2026-05-30 00:00:50.470 | INFO | PID:668 | agent_wrapper_common.create_standard_agent_wrapper:117 - aisrv policy_name train_one, algo ppo, agent_wrapper is StandardModelWrapperPytorch
+2026-05-30 00:00:50.689 | INFO | PID:668 | agent_wrapper_common.create_standard_agent_wrapper:117 - aisrv policy_name train_two, algo ppo, agent_wrapper is StandardModelWrapperPytorch
+2026-05-30 00:00:50.689 | INFO | PID:668 | agent_wrapper_common.create_standard_agent_wrapper:117 - aisrv policy_name train_two, algo ppo, agent_wrapper is StandardModelWrapperPytorch
+2026-05-30 00:00:50.690 | INFO | PID:668 | kaiwu_rl_helper_standard.start_agent:1229 - aisrv kaiwu_rl_helper start agent 0 with train_one
+2026-05-30 00:00:50.690 | INFO | PID:668 | kaiwu_rl_helper_standard.start_agent:1229 - aisrv kaiwu_rl_helper start agent 0 with train_one
+2026-05-30 00:00:50.692 | INFO | PID:668 | kaiwu_rl_helper_standard.start_agent:1229 - aisrv kaiwu_rl_helper start agent 1 with train_two
+2026-05-30 00:00:50.692 | INFO | PID:668 | kaiwu_rl_helper_standard.start_agent:1229 - aisrv kaiwu_rl_helper start agent 1 with train_two
+2026-05-30 00:00:50.776 | INFO | PID:668 | train_env_conf_validate.read_usr_conf:240 - aisrv Loading configuration from: agent_ppo/conf/train_env_conf.toml
+2026-05-30 00:00:50.776 | INFO | PID:668 | train_env_conf_validate.read_usr_conf:240 - aisrv Loading configuration from: agent_ppo/conf/train_env_conf.toml
+2026-05-30 00:00:50.780 | INFO | PID:668 | train_env_conf_validate.read_usr_conf:242 - aisrv Configuration file loaded successfully
+2026-05-30 00:00:50.780 | INFO | PID:668 | train_env_conf_validate.read_usr_conf:242 - aisrv Configuration file loaded successfully
+2026-05-30 00:00:50.781 | INFO | PID:668 | train_env_conf_validate.read_usr_conf:246 - aisrv Validating monitor configuration...
+2026-05-30 00:00:50.781 | INFO | PID:668 | train_env_conf_validate.read_usr_conf:246 - aisrv Validating monitor configuration...
+2026-05-30 00:00:50.782 | INFO | PID:668 | train_env_conf_validate.validate_monitor_config:71 - aisrv ✓ monitor.monitor_side validation passed: 0
+2026-05-30 00:00:50.782 | INFO | PID:668 | train_env_conf_validate.validate_monitor_config:71 - aisrv ✓ monitor.monitor_side validation passed: 0
+2026-05-30 00:00:52.071203: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-05-30 00:00:54.224 | INFO | PID:665 | reverb_util.__init__:52 - aisrv learner_proxy reverb client Client, server_address=127.0.0.1:9999 127.0.0.1:9999 connect to reverb server
+2026-05-30 00:00:54.225 | INFO | PID:665 | learner_proxy.before_run:435 - learner_proxy reverb server is 127.0.0.1:9999, table_names is ['reverb_replay_buffer_table_0']
+2026-05-30 00:00:54.227 | INFO | PID:665 | learner_proxy.before_run:491 - learner_proxy zmq client connect at 127.0.0.1:9997 with client_id 8426152
+2026-05-30 00:00:54.228 | INFO | PID:665 | learner_proxy.before_run:506 - learner_proxy policy_name: train_one, start success at pid 665
+Train test failed, algorithm_name ppo, find error log, please check
